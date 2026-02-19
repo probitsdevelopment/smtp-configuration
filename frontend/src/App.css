@@ -1,0 +1,129 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card layout */
+.card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.button:hover {
+  background-color: #f0f0f0;
+}
+
+.primary {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+}
+
+.primary:hover {
+  background-color: #1e4ed8;
+}
+
+/* Inputs */
+.input,
+.textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.oauth-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.oauth-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #1a73e8;
+  background: #fff;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+  pointer-events: auto; /* 🔑 ensure clickable */
+}
+
+.oauth-btn:hover {
+  background: #f5f9ff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.oauth-btn.google {
+  border-color: #1a73e8;
+}
+
+.oauth-btn.microsoft {
+  border-color: #0078d4;
+}
+
+.logo {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.google-logo {
+  background: conic-gradient(
+    #4285f4 0deg 90deg,
+    #34a853 90deg 180deg,
+    #fbbc05 180deg 270deg,
+    #ea4335 270deg 360deg
+  );
+  border-radius: 50%;
+}
+
+.microsoft-logo {
+  background: linear-gradient(
+    90deg,
+    #f25022 0%,
+    #7fba00 33%,
+    #00a4ef 66%,
+    #ffb900 100%
+  );
+  border-radius: 2px;
+}

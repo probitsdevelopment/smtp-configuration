@@ -1,0 +1,47 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Backend - Python
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.egg-info/
+backend/.eggs/
+backend/dist/
+backend/build/
+backend/.pytest_cache/
+backend/.coverage
+backend/htmlcov/
+
+# Backend - Database & Data
+backend/email_poc.sqlite
+backend/data/oauth_connections.jsonl
+backend/*.db
+
+# Frontend - Node.js
+frontend/node_modules/
+frontend/package-lock.json
+frontend/build/
+frontend/dist/
+frontend/.next/
+frontend/out/
+
+# Frontend - React
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
